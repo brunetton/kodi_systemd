@@ -1,0 +1,14 @@
+[Unit]
+Description=Kodi
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+RestartSec=2s
+User=root
+ExecStart=/usr/bin/kodi
+ExecStop=/usr/bin/pkill -9 kodi.bin
+
+[Install]
+WantedBy=multi-user.target
