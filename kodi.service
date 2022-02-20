@@ -6,7 +6,7 @@ After=network-online.target
 [Service]
 Restart=always
 RestartSec=2s
-User=root
+User=pi
 ExecStart=/usr/bin/kodi
 ExecStop=/usr/bin/pkill -9 kodi.bin
 
