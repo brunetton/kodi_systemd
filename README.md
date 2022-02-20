@@ -1,6 +1,8 @@
-Systemd service for Kodi.
+Systemd service for Kodi for non graphical environments (typically Raspberry Pi mini computer). 
 
-- start at boot
+## Features 
+
+- start Kodi at boot
 - restart in case of crashes
 
 ## Install
